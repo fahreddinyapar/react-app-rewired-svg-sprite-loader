@@ -3,13 +3,13 @@
 This package is not yet published to the npm registry. Install from GitHub:
 
 ```
-yarn add --dev codebandits/react-app-rewired-svg-sprite-loader
+yarn add --dev react-app-rewired-svg-sprite-loader
 ```
 
 OR
 
 ```
-npm install --save-dev codebandits/react-app-rewired-svg-sprite-loader
+npm install --save-dev react-app-rewired-svg-sprite-loader
 ```
 
 ## Usage
