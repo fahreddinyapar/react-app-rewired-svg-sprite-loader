@@ -20,6 +20,7 @@ Import your `*.svg` files and use them as React components.
 
 In your react-app-rewired configuration:
 
+
 ```javascript
 /* config-overrides.js */
 
@@ -34,6 +35,39 @@ module.exports = function override(config, env) {
 ```
 
 In your React application:
+
+```jsx harmony
+// src/App.js
+
+import React from "react";
+import ReactDom from "react-dom";
+import Icon from "./Icon";
+
+ReactDom.render(
+  <div>
+    <Icon name="icon1" />
+    <Icon name="icon2" />
+  </div>,
+  document.getElementById("app")
+);
+```
+
+
+```jsx harmony
+// src/Icon.js comp
+import React from "react";
+import "./icons.svg";
+
+const Icon = (props) => (
+  <svg className={`icon icon-${props.name}`}>
+    <use xlinkHref={`#icons_${props.name}`} />
+  </svg>
+);
+
+export default Icon;
+```
+
+
 
 ```svg
 <!-- src/icons.svg -->
@@ -51,32 +85,4 @@ In your React application:
 </svg>
 ```
 
-```jsx harmony
-// src/Icon.js comp
-import React from "react";
-import "./icons.svg";
 
-const Icon = (props) => (
-  <svg className={`icon icon-${props.name}`}>
-    <use xlinkHref={`#icons_${props.name}`} />
-  </svg>
-);
-
-export default Icon;
-```
-
-```jsx harmony
-// src/App.js
-
-import React from "react";
-import ReactDom from "react-dom";
-import Icon from "./Icon";
-
-ReactDom.render(
-  <div>
-    <Icon name="icon1" />
-    <Icon name="icon2" />
-  </div>,
-  document.getElementById("app")
-);
-```
