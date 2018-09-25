@@ -1,0 +1,26 @@
+{
+  "name": "react-app-rewired-svg-sprite-loader",
+  "version": "1.0.0",
+  "description": "react-app-rewired svg-sprite loader",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/fahreddinyapar/react-app-rewired-svg-sprite-loader.git"
+  },
+  "keywords": [
+    "react-app-rewired",
+    "svg-sprite-loader"
+  ],
+  "author": "fahreddin yapar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fahreddinyapar/react-app-rewired-svg-sprite-loader/issues"
+  },
+  "homepage": "https://github.com/fahreddinyapar/react-app-rewired-svg-sprite-loader#readme",
+  "dependencies": {
+    "svg-sprite-loader": "^3.1.6"
+  }
+}
